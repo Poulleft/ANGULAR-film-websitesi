@@ -1,0 +1,30 @@
+
+<div class="container">
+      <div class="row">
+            <div class="col-md-6">
+                  <div class="card">
+                        <div class="text-center">
+                              <h2>Giriş</h2>
+                        </div>
+                        <form [formGroup]="girisForm" (ngSubmit)="girisYap()">
+                        <div class="mb-2">
+                              <label for="mailInput" class="form-label">E-mail</label>
+                              <input type="email" class="form-control" placeholder="Lüften E-mail Giriniz" formControlName="email">
+                        </div>
+                        <div class="mb-2">
+                              <label for="isimInput" class="form-label">Ad</label>
+                              <input type="text" class="form-control" placeholder="Lüften İsminizi Giriniz" formControlName="isim">
+                        </div>
+                        <div class="mb-2">
+                              <label for="sifreInput" class="form-label">Şifre</label>
+                              <input type="password" class="form-control" placeholder="Lüften Şifre Giriniz" formControlName="sifre">
+                        </div>
+
+                        <button type="submit" class="btn mt-2 btn-warning">Giriş Yap</button>
+                        
+                        </form>
+                        <a [routerLink]="['/kayit']">Hesabın Yoksa Kayıt Ol</a>
+                  </div>
+            </div>
+      </div>
+</div>

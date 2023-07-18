@@ -1,0 +1,33 @@
+<div class="row mt-4">
+      <h5 class="text-white">Aksiyon Filmleri</h5>
+      <div class="rowposter mt-3 p-2">
+        <ng-container *ngFor="let kat of aksiyonFilmi">
+          <img src="https://image.tmdb.org/t/p/original/{{ kat.poster_path }}" class="rowimg poster" [routerLink]="['/film',kat.id]">
+        </ng-container>
+</div>
+
+<div class="row mt-4">
+  <h5 class="text-white">Savaş Filmleri</h5>
+  <div class="rowposter mt-3 p-2">
+    <ng-container *ngFor="let kat of savasFilmi">
+      <img src="https://image.tmdb.org/t/p/original/{{ kat.poster_path }}" class="rowimg poster" [routerLink]="['/film',kat.id]">
+    </ng-container>
+</div>
+
+<div class="row mt-4">
+  <h5 class="text-white">Korku Filmleri</h5>
+  <div class="rowposter mt-3 p-2">
+    <ng-container *ngFor="let kat of korkuFilmi">
+      <img src="https://image.tmdb.org/t/p/original/{{ kat.poster_path }}" class="rowimg poster" [routerLink]="['/film',kat.id]">
+    </ng-container>
+  </div>
+
+
+<div class="row mt-4">
+  <h5 class="text-white">Romantizm Filmleri</h5>
+  <div class="rowposter mt-3 p-2">
+    <ng-container *ngFor="let kat of romantikFilmi">
+      <img src="https://image.tmdb.org/t/p/original/{{ kat.poster_path }}" class="rowimg poster" [routerLink]="['/film',kat.id]">
+    </ng-container>
+</div>
+

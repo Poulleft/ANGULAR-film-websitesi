@@ -1,0 +1,31 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-dark " [ngStyle]="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">HDFilmler</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/ensevilen">En Sevilen</a>
+        </li>
+        <li class="nav-item d-flex">
+          <a class="nav-link" routerLink="/kategori">kategori</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" routerLink="/giris">Giriş</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" routerLink="/kayit">Kayıt Ol</a>
+        </li>
+        <li class="nav-item ">
+          <button class="nav-link btn btn-outline-warning" routerLink="/giris">Çıkış Yap</button>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<app-arama></app-arama>
+
+
+
+<router-outlet></router-outlet>

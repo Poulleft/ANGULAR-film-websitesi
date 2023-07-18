@@ -1,0 +1,29 @@
+
+<div class="container">
+      <div class="row">
+            <div class="col-md-6">
+                  <div class="card">
+                        <div class="text-center mb-3 p-2">
+                              <h2>Hesabın Yoksa Kayıt Ol</h2>
+                        </div>
+                        <form [formGroup]="kayitForm" (ngSubmit)="kayitYap()">
+                        <div  class="mb-4">
+                              <label for="mailInput" class="form-label">E-mail</label>
+                              <input type="email" class="form-control" placeholder="Lüften E-mail Giriniz" formControlName="email">
+                        </div>
+                        <div class="mb-4" > 
+                              <label for="isimInput" class="form-label">Ad</label>
+                              <input type="text" class="form-control" placeholder="Lüften İsminizi Giriniz" formControlName="isim">
+                        </div>
+                        <div class="mb-4">
+                              <label for="sifreInput" class="form-label">Şifre</label>
+                              <input type="password" class="form-control" placeholder="Lüften Şifre Giriniz" formControlName="sifre">
+                        </div>
+                        <button type="submit" class="btn mt-2 btn-warning">Kayıt Ol</button>
+                        
+                  </form>
+                  <a [routerLink]="['/giris']">Hesabın Varsa Giriş Yap</a>
+                  </div>
+            </div>
+      </div>
+</div>

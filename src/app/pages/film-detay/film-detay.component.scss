@@ -1,0 +1,44 @@
+.col-lg-1{
+      img{
+            width: 25px;
+            height: 25px;
+      }
+}
+
+h3 {
+      color:burlywood;
+}
+
+p{
+      color:darkgoldenrod;
+}
+
+
+h2 {
+      color:chocolate;
+      font-size: 1.5rem;
+      font-weight: bold;
+}
+
+.col-lg-4 {
+      width: 33.33%;
+      float: left;
+}
+
+.row {
+      display: flex;
+      flex-wrap: wrap;
+}
+
+
+img {
+      max-width: 100%;
+      height: auto;
+}
+
+h5 {
+      color:aliceblue;
+      font-size: 1.2rem;
+      font-weight: bold;
+}
+

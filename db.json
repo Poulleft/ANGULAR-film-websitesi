@@ -1,0 +1,22 @@
+{
+  "kayit": [
+    {
+      "isim": "Mert",
+      "sifre": "12345",
+      "email": "mertgulseren100@gmail.com",
+      "id": 1
+    },
+    {
+      "isim": "Samet",
+      "sifre": "98765",
+      "email": "samet@gmail.com",
+      "id": 2
+    },
+    {
+      "isim": "erda emir",
+      "email": "arda@hotmail.com",
+      "sifre": "894523",
+      "id": 3
+    }
+  ]
+}

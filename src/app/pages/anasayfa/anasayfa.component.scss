@@ -1,0 +1,32 @@
+h2{
+      color:burlywood;
+      font-size: 25px;
+}
+
+p{
+      color:snow;
+}
+
+.carousel-inner{
+      height: 700px;
+}
+
+.carousel-inner .carousel-item img{
+      height: 700px;
+      object-fit: cover;
+}
+
+.rowing{
+max-height: 200px;
+object-fit: contain;
+transition: transform;
+}
+
+.rowing:hover{
+      transform: scale(1.1);
+      cursor:pointer;
+}
+
+.largeposter{
+      max-height:300px;
+}

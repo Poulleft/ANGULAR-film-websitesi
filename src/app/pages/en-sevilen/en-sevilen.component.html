@@ -1,0 +1,15 @@
+
+<div class="contain mt-3 p-3">
+      <div class="row">
+        <h5 class="text-white fs-1 fst-italic">En Sevilen Filmler</h5>
+        <div class="poster">
+          <ng-container *ngFor="let en of enIyiFilmlerS">
+            <img src="https://image.tmdb.org/t/p/original/{{ en.poster_path }}" class="rowing largeposter" alt="..."
+            [routerLink]="['/film' , en.id]">
+          <h2>{{en.original_title}}</h2>
+              <p>{{en.overview}}</p>
+          </ng-container>
+        </div>
+      </div>
+
+    </div>
